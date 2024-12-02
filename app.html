@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="title">visualize data with a choropleth map</h1>
+<div id="description">Percentage of adults age 25 and older with a bachelor's degree or higher (2010-2014)</div>
+<svg id="canvas">
+</svg>
+<svg id="legend">
+  <g>
+    <rect x="10" y="0" width="40" height="40" fill="tomato"></rect>
+    <text x="60" y="20" fill="black">Percentage of 15% or less</text>
+  </g>
+  <g>
+    <rect x="10" y="40" width="40" height="40" fill="orange"></rect>
+    <text x="60" y="60" fill="black">Percentage of 15% - 30% or less</text>
+  </g>
+  <g>
+    <rect x="10" y="80" width="40" height="40" fill="Lightgreen"></rect>
+    <text x="60" y="100" fill="black">Percentage of 30% - 45% or less</text>
+  </g>
+  <g>
+    <rect x="10" y="120" width="40" height="40" fill="limegreen"></rect>
+    <text x="60" y="140" fill="black">Percentage more than 45%</text>
+  </g>
+  
+</svg>
+<div id="tooltip"></div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
